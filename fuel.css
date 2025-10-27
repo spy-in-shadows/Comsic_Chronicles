@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=2000&q=80');
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+nav {
+    background-color: #111;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+section {
+    padding: 30px;
+    text-align: center;
+}
+
+.timeline, .missions, .astronauts {
+    margin-top: 40px;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #111;
+    color: gray;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
