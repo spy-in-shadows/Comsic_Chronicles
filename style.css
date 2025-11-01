@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Fonk';
+    src: url(./a.ttf) format(opentype);
+}
+
+@font-face {
+    font-family: 'New';
+    src: url(./b.ttf) format(opentype);
+}
 :root {
     --gold: #d4af37;
     --dark-gold: #b38f2a;
@@ -115,16 +124,13 @@ nav a:hover::after {
 }
 
 .nav-logo {
-    position: absolute;
-    left: 5%;
-    top: 50%;
-    transform: translateY(-50%);
     color: var(--gold);
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
-    text-decoration: none;
     font-weight: 700;
     letter-spacing: 0.5px;
+    margin-right: 20vw;
+    margin-left: 0px;
 }
 
 section {
@@ -321,15 +327,22 @@ p {
 
 footer {
     background-color: var(--dark-gray);
-    padding: 60px 10% 30px;
+    padding: 30px 10% 30px;
 }
 
 .last {
     text-align: center;
-    padding-top: 30px;
-    border-top: 1px solid var(--medium-gray);
     color: var(--text-gray);
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+}
+
+.last a{
+    color: var(--text-gray);
+}
+
+.name {
+    text-decoration: none;
+    font-family: 'Fonk';
 }
 
 img {
