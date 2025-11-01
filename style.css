@@ -189,6 +189,11 @@ p {
     margin-bottom: 30px;
 }
 
+.timeline-item:hover {
+    transform: scale(1.08);
+    transition: all 0.5s ease;
+}
+
 .timeline-item::after {
     content: '';
     position: absolute;
