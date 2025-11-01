@@ -147,7 +147,7 @@ h2 {
 }
 
 h2::after {
-    content: '';
+    content: ''; 
     position: absolute;
     width: 50%;
     height: 3px;
@@ -227,6 +227,91 @@ p {
     color: var(--gold);
     margin-bottom: 10px;
 }
+
+.missions-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.mission-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    transition: all 0.5s ease;
+    border-left: 5px solid var(--gold);
+}
+
+.mission-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
+}
+
+.mission-card img {
+    width: 110%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+    display: block;
+}
+
+.mission-card:hover img {
+    transform: scale(1.1);
+}
+
+.mission-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: translateY(30px);
+    opacity: 0;
+    border-radius: 16px;
+}
+
+.mission-card:hover .mission-overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.mission-overlay h3 {
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.mission-overlay p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.mission-overlay a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--dark-gold);
+    position: relative;
+}
+
+.mission-overlay a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--gold);
+    transition: width 0.3s ease;
+}
+
+.mission-overlay a:hover::after {
+    width: 100%;
+}
+
 
 footer {
     background-color: var(--dark-gray);
