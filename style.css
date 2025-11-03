@@ -387,6 +387,11 @@ p {
     box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
 }
 
+.feature-icon {
+    font-size: 3rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
 
 footer {
     background-color: var(--dark-gray);
