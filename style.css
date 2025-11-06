@@ -178,7 +178,7 @@ p {
 }
 
 #timeline {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?cs=srgb&dl=pexels-philippedonn-1169754.jpg&fm=jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?cs=srgb&dl=pexels-philippedonn-1169754.jpg&fm=jpg);
     background-position: center;
     background-size: contain;
 }
@@ -254,7 +254,7 @@ p {
 }
 
 #missions {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=pexels-francesco-ungaro-998641.jpg&fm=jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?cs=srgb&dl=pexels-francesco-ungaro-998641.jpg&fm=jpg);
     background-position: center;
     background-size: contain;
 }
@@ -358,6 +358,7 @@ p {
     border-radius: 10px;
     transition: transform 0.3s ease;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    position: relative;
 }
 
 .feature-item:hover {
@@ -372,6 +373,7 @@ p {
 }
 
 .astro-img {
+    position: absolute;
     width: 100%;
     height: 340px;
     object-fit: cover;
@@ -380,11 +382,37 @@ p {
     border: 2px solid var(--gold);
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
+    left: 0%;
 }
 
 .astro-img:hover {
     transform: scale(1.03);
     box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
+    opacity: 0;
+}
+
+.astro-vid {
+    position: absolute;
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 2px solid var(--gold);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    left: 0%;
+}
+
+.astro-vid:hover {
+    opacity: 1;
+}
+
+.astro-media {
+    position: relative;
+    width: 100%;
+    height: 340px;
 }
 
 .feature-icon {
