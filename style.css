@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Fonk';
-    src: url(./a.ttf) format(opentype);
+    src: url(./fonts/a.ttf) format(opentype);
 }
 
 :root {
